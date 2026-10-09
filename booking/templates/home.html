@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home - Paradise Resort
+{% endblock %}
+
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Welcome to Paradise Resort
+        </h1>
+
+        <p>
+            Enjoy a comfortable and peaceful stay
+            with our easy online booking system.
+        </p>
+
+        <a href="{% url 'booking' %}"
+           class="btn">
+
+            Book Your Stay
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="about">
+
+    <h2>
+        About Our Resort
+    </h2>
+
+    <p>
+        Paradise Resort provides comfortable rooms,
+        peaceful surroundings and quality services
+        for families, couples and individual travelers.
+    </p>
+
+</section>
+
+
+<section class="features">
+
+    <div class="feature">
+
+        <h3>
+            Comfortable Rooms
+        </h3>
+
+        <p>
+            Clean and comfortable rooms for a relaxing stay.
+        </p>
+
+    </div>
+
+
+    <div class="feature">
+
+        <h3>
+            Easy Booking
+        </h3>
+
+        <p>
+            Book your room easily using our online booking form.
+        </p>
+
+    </div>
+
+
+    <div class="feature">
+
+        <h3>
+            Great Service
+        </h3>
+
+        <p>
+            We provide friendly and helpful resort services.
+        </p>
+
+    </div>
+
+</section>
+
+{% endblock %}

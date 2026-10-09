@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Book Your Stay - Paradise Resort
+{% endblock %}
+
+
+{% block content %}
+
+<div class="booking-container">
+
+    <h1>
+        Resort Booking
+    </h1>
+
+    <p>
+        Enter your details to book your room.
+    </p>
+
+
+    <form method="POST">
+
+        {% csrf_token %}
+
+
+        <label>
+            Full Name
+        </label>
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Enter your full name"
+            required
+        >
+
+
+        <label>
+            Email
+        </label>
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+        >
+
+
+        <label>
+            Phone Number
+        </label>
+
+        <input
+            type="text"
+            name="phone"
+            placeholder="Enter your phone number"
+            required
+        >
+
+
+        <label>
+            Select Room
+        </label>
+
+        <select name="room_type" required>
+
+            <option value="">
+                Select a room
+            </option>
+
+            <option value="Deluxe Room">
+                Deluxe Room - ₹2,500/night
+            </option>
+
+            <option value="Luxury Room">
+                Luxury Room - ₹4,000/night
+            </option>
+
+            <option value="Family Room">
+                Family Room - ₹5,000/night
+            </option>
+
+        </select>
+
+
+        <label>
+            Check-in Date
+        </label>
+
+        <input
+            type="date"
+            name="check_in"
+            required
+        >
+
+
+        <label>
+            Check-out Date
+        </label>
+
+        <input
+            type="date"
+            name="check_out"
+            required
+        >
+
+
+        <label>
+            Number of Guests
+        </label>
+
+        <input
+            type="number"
+            name="guests"
+            min="1"
+            max="20"
+            required
+        >
+
+
+        <label>
+            Special Request
+        </label>
+
+        <textarea
+            name="special_request"
+            placeholder="Any special request?"
+        ></textarea>
+
+
+        <button
+            type="submit"
+            class="btn">
+
+            Confirm Booking
+
+        </button>
+
+
+    </form>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,389 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Navbar */
+
+header {
+    background-color: #1f3c4d;
+    padding: 15px 0;
+}
+
+
+.navbar {
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1566073771259-6a8506099945")
+    center/cover;
+}
+
+
+.hero-content {
+    color: white;
+    padding: 30px;
+}
+
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+
+    background-color: #e09f3e;
+    color: white;
+
+    padding: 12px 25px;
+
+    text-decoration: none;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+
+.btn:hover {
+    background-color: #c98220;
+}
+
+
+/* About */
+
+.about {
+    width: 80%;
+    margin: 40px auto;
+
+    text-align: center;
+}
+
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+
+/* Features */
+
+.features {
+    width: 90%;
+    margin: 30px auto 60px;
+
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.feature {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    flex: 1;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.feature h3 {
+    margin-bottom: 10px;
+}
+
+
+/* Page title */
+
+.page-title {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+.page-title h1 {
+    font-size: 35px;
+}
+
+
+/* Rooms */
+
+.rooms-container {
+    width: 90%;
+    margin: 20px auto 60px;
+
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+
+.room-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 8px;
+
+    flex: 1;
+
+    text-align: center;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.room-card h2 {
+    margin-bottom: 15px;
+}
+
+
+.room-card h3 {
+    margin: 20px 0;
+}
+
+
+/* Booking */
+
+.booking-container {
+    width: 600px;
+    max-width: 90%;
+
+    margin: 50px auto;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.booking-container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.booking-container > p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+form label {
+    display: block;
+
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+
+form textarea {
+    height: 100px;
+
+    resize: vertical;
+}
+
+
+form button {
+    margin-top: 25px;
+    width: 100%;
+}
+
+
+/* Confirmation */
+
+.confirmation {
+    width: 600px;
+    max-width: 90%;
+
+    margin: 60px auto;
+
+    text-align: center;
+}
+
+
+.confirmation h1 {
+    color: #2e7d32;
+
+    margin-bottom: 10px;
+}
+
+
+.booking-details {
+    background: white;
+
+    text-align: left;
+
+    margin: 30px 0;
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.booking-details h2 {
+    margin-bottom: 20px;
+}
+
+
+.booking-details p {
+    margin-bottom: 8px;
+}
+
+
+/* Messages */
+
+.messages {
+    width: 90%;
+    max-width: 600px;
+
+    margin: 20px auto;
+}
+
+
+.message {
+    background-color: #ffdddd;
+
+    border: 1px solid #ffaaaa;
+
+    padding: 12px;
+
+    border-radius: 5px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #1f3c4d;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 50px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    nav a {
+        margin: 0 7px;
+    }
+
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+
+    .features,
+    .rooms-container {
+        flex-direction: column;
+    }
+
+}

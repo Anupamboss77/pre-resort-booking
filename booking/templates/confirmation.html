@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Booking Confirmed
+{% endblock %}
+
+
+{% block content %}
+
+<div class="confirmation">
+
+    <h1>
+        Booking Confirmed!
+    </h1>
+
+    <p>
+        Thank you for booking with Paradise Resort.
+    </p>
+
+
+    <div class="booking-details">
+
+        <h2>
+            Booking Details
+        </h2>
+
+
+        <p>
+            <strong>Booking ID:</strong>
+            {{ booking.id }}
+        </p>
+
+
+        <p>
+            <strong>Name:</strong>
+            {{ booking.name }}
+        </p>
+
+
+        <p>
+            <strong>Email:</strong>
+            {{ booking.email }}
+        </p>
+
+
+        <p>
+            <strong>Phone:</strong>
+            {{ booking.phone }}
+        </p>
+
+
+        <p>
+            <strong>Room:</strong>
+            {{ booking.room_type }}
+        </p>
+
+
+        <p>
+            <strong>Check-in:</strong>
+            {{ booking.check_in }}
+        </p>
+
+
+        <p>
+            <strong>Check-out:</strong>
+            {{ booking.check_out }}
+        </p>
+
+
+        <p>
+            <strong>Guests:</strong>
+            {{ booking.guests }}
+        </p>
+
+
+        <p>
+            <strong>Total Price:</strong>
+            ₹{{ booking.total_price }}
+        </p>
+
+
+        {% if booking.special_request %}
+
+        <p>
+            <strong>Special Request:</strong>
+            {{ booking.special_request }}
+        </p>
+
+        {% endif %}
+
+
+    </div>
+
+
+    <a href="{% url 'home' %}"
+       class="btn">
+
+        Back to Home
+
+    </a>
+
+</div>
+
+{% endblock %}

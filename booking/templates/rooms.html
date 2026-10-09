@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Rooms - Paradise Resort
+{% endblock %}
+
+
+{% block content %}
+
+<section class="page-title">
+
+    <h1>
+        Our Rooms
+    </h1>
+
+    <p>
+        Choose a room according to your requirements.
+    </p>
+
+</section>
+
+
+<section class="rooms-container">
+
+
+    <div class="room-card">
+
+        <h2>
+            Deluxe Room
+        </h2>
+
+        <p>
+            A comfortable room suitable for
+            individual travelers and couples.
+        </p>
+
+        <h3>
+            ₹2,500 / night
+        </h3>
+
+        <a href="{% url 'booking' %}"
+           class="btn">
+
+            Book Now
+
+        </a>
+
+    </div>
+
+
+
+    <div class="room-card">
+
+        <h2>
+            Luxury Room
+        </h2>
+
+        <p>
+            A spacious room with premium facilities
+            for a comfortable stay.
+        </p>
+
+        <h3>
+            ₹4,000 / night
+        </h3>
+
+        <a href="{% url 'booking' %}"
+           class="btn">
+
+            Book Now
+
+        </a>
+
+    </div>
+
+
+
+    <div class="room-card">
+
+        <h2>
+            Family Room
+        </h2>
+
+        <p>
+            A large room suitable for families
+            and groups.
+        </p>
+
+        <h3>
+            ₹5,000 / night
+        </h3>
+
+        <a href="{% url 'booking' %}"
+           class="btn">
+
+            Book Now
+
+        </a>
+
+    </div>
+
+
+</section>
+
+{% endblock %}
